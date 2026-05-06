@@ -1,0 +1,84 @@
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px; /* Letra un poco más grande en PC para leer mejor */
+    }
+}
+
+/* 1. Fondo general de la página */
+body {
+    margin-bottom: 60px; /* Espacio necesario para que el footer no tape el contenido */
+    background-color: #1e1e2e; /* Fondo oscuro elegante */
+    color: #cdd6f4; /* Texto claro principal */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* 2. Estilo para los enlaces normales */
+a {
+    color: #89b4fa; /* Azul suave */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+    a:hover {
+        color: #b4befe; /* Brilla un poco al pasar el mouse */
+    }
+
+/* 3. Botones y controles estándar */
+.btn {
+    border-radius: 8px; /* Bordes redondeados */
+    transition: all 0.2s ease;
+}
+
+    .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+        /* Anillo de enfoque azul claro en lugar del predeterminado de Bootstrap */
+        box-shadow: 0 0 0 0.25rem rgba(137, 180, 250, 0.4);
+        border-color: #89b4fa;
+    }
+
+/* 4. Cajas de texto (inputs) adaptadas al fondo oscuro */
+.form-control, .form-select {
+    background-color: #313244;
+    border: 1px solid #45475a;
+    color: #cdd6f4;
+    border-radius: 8px;
+}
+
+    .form-control:focus, .form-select:focus {
+        background-color: #313244;
+        color: #ffffff;
+    }
+
+/* 5. Comportamiento de los textos de relleno (placeholders) */
+.form-floating > .form-control-plaintext::placeholder,
+.form-floating > .form-control::placeholder {
+    color: #a6adc8;
+    text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder,
+.form-floating > .form-control:focus::placeholder {
+    text-align: start;
+}
+
+/* 6. El Footer (Pie de página) predeterminado de .NET modificado */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+    background-color: rgba(30, 30, 46, 0.7); /* Fondo semi-transparente */
+    backdrop-filter: blur(12px); /* Efecto cristal sobre el fondo */
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1px solid #313244 !important;
+}
+
+    .footer .text-muted {
+        color: #a6adc8 !important; /* Asegurar que el texto del footer se lea bien */
+    }
