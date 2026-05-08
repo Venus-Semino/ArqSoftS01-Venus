@@ -17,26 +17,26 @@ namespace Catalogo.Controllers
             new Item {
                 Id = 2,
                 Titulo = "El libro de la vida",
-                Genero = "Animación",
+                Genero = "Hack and Slash",
                 Ano = 2014,
                 Plataforma = "Netflix",
-                Descripcion = "Basada en la cultura mexicana sobre el día de los murtos, nos cuentan una intrepida aventura de 3 amigos de infancia."
+                Descripcion = "Basa."
             },
             new Item {
                 Id  = 3,
                 Titulo = "La chica del siglo XXI",
-                Genero = "k-drama",
-                Ano = 2022,
+                Genero = "Hack and Slash",
+                Ano = 2001,
                 Plataforma = "Netflix",
-                Descripcion = "Una chica quiere ayudar a su amiga a descubrir más sobre el chico que le gusta, pero en el intento, ella igual se enamora de un chico y la misión se complica."
+                Descripcion = "Videojuego que trata de un cazador..."
             },
             new Item {
                 Id  = 4,
-                Titulo = "Auque nuestro amor desvanezca a esta noche",
-                Genero = "k-drama",
-                Ano = 2026,
+                Titulo = "Auque nuestro amor desvanezca a medianoche",
+                Genero = "Hack and Slash",
+                Ano = 2001,
                 Plataforma = "Netflix",
-                Descripcion = "Una chica que tiene un problema y un chico que por un reto se declaró a la chica, empiezan a salir, pero las cosas se complican con el tiempo."
+                Descripcion = "Videojuego que trata de un cazador..."
             },
             new Item {
                 Id  = 5,
@@ -44,7 +44,7 @@ namespace Catalogo.Controllers
                 Genero = "Drama",
                 Ano = 2001,
                 Plataforma = "Amazon Prime",
-                Descripcion = "Nos muestra una narrativa de un amor incondicional entre un padre y su hija a pesar de las dificultades que se presentan."
+                Descripcion = "Videojuego que trata de un cazador..."
             },
 
         };
