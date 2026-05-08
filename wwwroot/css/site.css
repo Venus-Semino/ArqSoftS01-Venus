@@ -82,3 +82,63 @@ a {
     .footer .text-muted {
         color: #a6adc8 !important; /* Asegurar que el texto del footer se lea bien */
     }
+
+/* Cuadrícula adaptativa: acomoda las películas automáticamente según el tamaño de la pantalla */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 2.5rem;
+    padding: 2rem 0;
+}
+
+/* Tarjeta estilo cine antiguo + Glassmorphism */
+.movie-card {
+    background: rgba(49, 50, 68, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(180, 190, 254, 0.15); /* Borde sutil */
+    border-radius: 16px; /* Bordes bien redondeados */
+    padding: 12px;
+    text-align: center;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+    /* La imagen de la película con filtro retro */
+    .movie-card img {
+        width: 100%;
+        height: 340px;
+        object-fit: cover;
+        border-radius: 12px;
+        /* El filtro antiguo: sepia + menos brillo para el toque vintage */
+        filter: sepia(0.65) contrast(1.1) brightness(0.85);
+        transition: filter 0.5s ease, transform 0.5s ease;
+    }
+
+    /* Interacción moderna al pasar el cursor */
+    .movie-card:hover {
+        transform: translateY(-12px); /* La tarjeta se eleva */
+        box-shadow: 0 15px 30px rgba(180, 190, 254, 0.2); /* Resplandor cálido/lavanda */
+        border-color: rgba(180, 190, 254, 0.5);
+    }
+
+        /* La imagen recupera la vida al interactuar */
+        .movie-card:hover img {
+            filter: sepia(0) contrast(1) brightness(1); /* Vuelve al color real */
+            transform: scale(1.03); /* Se acerca un poquito */
+        }
+
+/* Texto de la tarjeta */
+.movie-info {
+    padding-top: 15px;
+}
+
+.movie-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #cdd6f4;
+    margin: 0;
+    /* Fuente tipo máquina de escribir para reforzar la estética clásica */
+    font-family: 'Courier New', Courier, monospace;
+}
+

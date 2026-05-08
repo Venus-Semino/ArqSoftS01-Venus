@@ -10,17 +10,17 @@ namespace Catalogo.Controllers
                 Id = 1,
                 Titulo = "La princesa y el sapo",
                 Genero = "Animación",
-                Ano = 2001,
+                Ano = 2009,
                 Plataforma = "Disney",
-                Descripcion = "Videojuego que trata de un cazador..."
+                Descripcion = "Una chica con el sueño de abrir un restaurante, se convierte en un sapo por culpa de una estrella..."
             },
             new Item {
                 Id = 2,
                 Titulo = "El libro de la vida",
                 Genero = "Hack and Slash",
-                Ano = 2001,
+                Ano = 2014,
                 Plataforma = "Netflix",
-                Descripcion = "Videojuego que trata de un cazador..."
+                Descripcion = "Basa."
             },
             new Item {
                 Id  = 3,
