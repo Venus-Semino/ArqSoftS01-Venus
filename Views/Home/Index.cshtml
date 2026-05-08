@@ -1,8 +1,23 @@
 ﻿@{
-    ViewData["Title"] = "Página prinicipal";
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">¿Quieres ver una película?</h1>
-    <p>Learn about <a>Aquí encontrarás una lista de peliculas para poder interesarte a verlas!</a>.</p>
+<div class="d-flex flex-column justify-content-center align-items-center text-center" style="min-height: 75vh;">
+    
+    <div style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); padding: 3rem; border-radius: 24px; border: 1px solid rgba(255,255,255,0.05); box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
+        
+        <h1 class="display-3 fw-bold mb-3" style="color: #ffffff; text-shadow: 0 0 20px rgba(137,180,250,0.6);">
+            Tu Colección
+        </h1>
+        
+        <p class="lead mb-4" style="color: #a6adc8; max-width: 500px; margin: 0 auto;">
+            Anota toda tus peliculas favoritas, para que la colección crezca.
+        </p>
+
+        <a asp-controller="Catalogo" asp-action="Index" class="btn btn-lg mt-3"
+               style="background-color: #89b4fa; color: #11111b; font-weight: bold; border-radius: 30px; padding: 12px 35px; box-shadow: 0 0 20px rgba(137,180,250,0.5); transition: all 0.3s ease;">
+            Entrar al Catálogo
+        </a>
+        
+    </div>
 </div>

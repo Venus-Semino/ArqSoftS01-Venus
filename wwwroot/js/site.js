@@ -11,12 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
         // Le decimos que el cambio de opacidad tomará 0.8 segundos de forma suave
         mainContent.style.transition = "opacity 0.8s ease-in-out";
 
-        // Esperamos una fracción de segundo y luego lo hacemos visible
         setTimeout(() => {
             mainContent.style.opacity = 1;
         }, 100);
     }
 
-    // 2. Mensaje en la consola (Un detalle genial para otros desarrolladores)
     console.log("%c¡Sistema iniciado correctamente! ", "color: #89b4fa; font-size: 14px; font-weight: bold;");
 });

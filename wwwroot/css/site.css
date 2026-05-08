@@ -10,15 +10,53 @@ html {
     }
 }
 
-/* 1. Fondo general de la página */
 body {
-    margin-bottom: 60px; /* Espacio necesario para que el footer no tape el contenido */
-    background-color: #1e1e2e; /* Fondo oscuro elegante */
-    color: #cdd6f4; /* Texto claro principal */
+    margin-bottom: 60px;
+    background: linear-gradient(-45deg, #0b0f19, #1a1025, #0f172a, #1e1b4b, #0b0f19);
+    background-size: 400% 400%;
+    animation: ledBackground 15s ease infinite;
+    color: #cdd6f4;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
 }
 
-/* 2. Estilo para los enlaces normales */
+@keyframes ledBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.movie-card {
+    background: rgba(255, 255, 255, 0.03); 
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08); 
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 220px; 
+}
+
+    .movie-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 0 25px rgba(137, 180, 250, 0.3); 
+        border-color: rgba(137, 180, 250, 0.5);
+    }
+
 a {
     color: #89b4fa; /* Azul suave */
     text-decoration: none;
@@ -26,17 +64,16 @@ a {
 }
 
     a:hover {
-        color: #b4befe; /* Brilla un poco al pasar el mouse */
+        color: #b4befe; 
     }
 
-/* 3. Botones y controles estándar */
+
 .btn {
-    border-radius: 8px; /* Bordes redondeados */
+    border-radius: 8px; 
     transition: all 0.2s ease;
 }
 
     .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-        /* Anillo de enfoque azul claro en lugar del predeterminado de Bootstrap */
         box-shadow: 0 0 0 0.25rem rgba(137, 180, 250, 0.4);
         border-color: #89b4fa;
     }
