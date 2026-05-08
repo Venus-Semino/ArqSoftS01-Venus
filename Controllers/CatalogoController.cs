@@ -44,7 +44,7 @@ namespace Catalogo.Controllers
                 Genero = "Drama",
                 Ano = 2001,
                 Plataforma = "Amazon Prime",
-                Descripcion = "Videojuego que trata de un cazador..."
+                Descripcion = "Nos muestra como el amor de un padre va más alla de los probleas que uno puede pacer en la vida."
             },
 
         };
