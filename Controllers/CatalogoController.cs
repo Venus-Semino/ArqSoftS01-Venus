@@ -20,23 +20,23 @@ namespace Catalogo.Controllers
                 Genero = "Hack and Slash",
                 Ano = 2014,
                 Plataforma = "Netflix",
-                Descripcion = "Basa."
+                Descripcion = "Basada en las tradiciones mexicanan nos cuentan un poco de su cultura con 3 intrepidos protagonistas."
             },
             new Item {
                 Id  = 3,
                 Titulo = "La chica del siglo XXI",
-                Genero = "Hack and Slash",
+                Genero = "kdrama",
                 Ano = 2001,
                 Plataforma = "Netflix",
-                Descripcion = "Videojuego que trata de un cazador..."
+                Descripcion = "Unos adolecentes que entre amistades, peleas y malentendidos hacen que el amor florezca..."
             },
             new Item {
                 Id  = 4,
                 Titulo = "Auque nuestro amor desvanezca a medianoche",
-                Genero = "Hack and Slash",
+                Genero = "kdrama",
                 Ano = 2001,
                 Plataforma = "Netflix",
-                Descripcion = "Videojuego que trata de un cazador..."
+                Descripcion = "Una chica que se le olvida que hizo el día anteriro y un chavo que quiere hacerle vivir cada día memorable..."
             },
             new Item {
                 Id  = 5,
